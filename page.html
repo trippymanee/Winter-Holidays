@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Winter Holidays</title>
+  <style>
+    body {
+      background-color: #add8e6; 
+      font-family: Arial, sans-serif;
+    }
+
+    h1, p {
+      color: #333; 
+    }
+
+    img {
+      border: 2px solid #333; 
+    }
+  </style>
+  <script>
+    function showGreeting() {
+      alert("Happy Holidays!");
+    }
+
+    function modifyText() {
+      document.getElementById('description').innerHTML = "My favorite winter holiday is Christmas!";
+    }
+
+    window.onload = function() {
+      var button = document.getElementById('holidayButton');
+      button.addEventListener('click', function() {
+        showGreeting();
+        modifyText();
+      });
+    };
+  </script>
+</head>
+<body>
+  <h1 id="title">Happy Winter Holidays!</h1>
+  <p id="description">My favorite winter holiday is...</p>
+  <img id="holidayImage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROL4_KfOw2kKarWzqh6oKSmwGk1pUrWmvJrg&s" alt="Winter Holiday Image" />
+  <button id="holidayButton">Click Me!</button>
+</body>
+</html>
